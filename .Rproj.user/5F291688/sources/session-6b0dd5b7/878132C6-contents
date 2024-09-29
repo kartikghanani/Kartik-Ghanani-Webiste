@@ -1,0 +1,22 @@
+project:
+  type: website
+
+website:
+  title: "My Quarto Website"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Portfolio"
+        href: portfolio.qmd
+      - text: "Blog"
+        href: blog.qmd
+    right:
+      - text: "About"
+        href: about.qmd
+
+theme:
+  light: cosmo
+  dark: cyborg
+
+
