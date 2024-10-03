@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About Me – My Quarto Website</title>
+<title>Blog – My Quarto Website</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -90,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -98,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Portfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link active" href="./blog.html" aria-current="page"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -125,7 +125,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About Me</h1>
+<h1 class="title">Blog</h1>
 </div>
 
 
@@ -142,16 +142,6 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/profile-01.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:5.2cm"></p>
-</figure>
-</div>
-<p>Hi, I’m Kartik Ghanani, and I am currently pursuing my master’s in data analytics engineering at George Mason University. Originally from India, I completed my B.Tech from Acropolis Institute of Technology in Indore. I have a passion for exploring and analyzing data, transforming complex datasets into meaningful insights that drive decision-making.</p>
-<p>Throughout my journey, I’ve worked on several projects that showcase my skills in data visualization, statistical analysis, and optimization. I’m experienced in using tools like R and Python to solve real-world problems and tell compelling data stories, and these projects are a reflection of my growth and capabilities in the field of data analytics.</p>
-<p>My goal is to become a skilled data analyst in a reputed company, where I can contribute my expertise and continue learning in the ever-evolving field of data analytics. In my free time, I enjoy playing football, gaming, and table tennis, which helps me stay balanced and energized.</p>
-<p>Feel free to explore my projects to see how I apply my passion for data to create impactful solutions.</p>
-<p>Feel free to connect with me on <a href="www.linkedin.com/in/kartik-ghanani-688ab420a">LinkedIn</a></p>
 
 
 
@@ -392,7 +382,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/kartikghanani\.github\.io\/Kartik-Ghanani-Webiste\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
