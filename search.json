@@ -1,16 +1,86 @@
 [
   {
+    "objectID": "redesign.html",
+    "href": "redesign.html",
+    "title": "Redesign Project",
+    "section": "",
+    "text": "Welcome to my redesign project, where I present two original visualizations and two redesigns for each. Navigate easily using the buttons below."
+  },
+  {
+    "objectID": "redesign.html#navigation",
+    "href": "redesign.html#navigation",
+    "title": "Redesign Project",
+    "section": "Navigation",
+    "text": "Navigation\n\nOriginal Visualization 1\n\n\nOriginal Visualization 2\n\n\nConcluding Remarks"
+  },
+  {
+    "objectID": "redesign.html#original-visualization-1",
+    "href": "redesign.html#original-visualization-1",
+    "title": "Redesign Project",
+    "section": "Original Visualization 1",
+    "text": "Original Visualization 1\n\n\n\nOriginal Graph 1\n\n\nSource: Original Graph 1 Source\n\n\nAnalysis of Original Visualization 1\n\n\nThe original graph aimed to show XYZ, but several visual flaws were noted:\n\n\n\nIssue 1: The color scheme is ineffective in differentiating the data categories.\n\n\nIssue 2: The use of 3D bars adds unnecessary complexity, making it hard to compare values.\n\n\n\n\nRedesign 1 of Original Visualization 1\n\n\n\nRedesigned Graph 1-1\n\n\nDiscussion: In this redesign, the colors were adjusted to improve differentiation, and 3D effects were removed to make the values easier to compare.\n\n\nRedesign 2 of Original Visualization 1\n\n\n\nRedesigned Graph 1-2\n\n\nDiscussion: In this redesign, additional grid lines were added, and the data categories were sorted in ascending order to make trends more apparent."
+  },
+  {
+    "objectID": "redesign.html#original-visualization-2",
+    "href": "redesign.html#original-visualization-2",
+    "title": "Redesign Project",
+    "section": "Original Visualization 2",
+    "text": "Original Visualization 2\n\n\n\nOriginal Graph 2\n\n\nSource: Original Graph 2 Source\n\n\nAnalysis of Original Visualization 2\n\n\nThe original graph attempted to visualize ABC but had the following issues:\n\n\n\nIssue 1: Lack of labels makes it difficult to interpret what each axis represents.\n\n\nIssue 2: Data points are overplotted, obscuring key trends.\n\n\n\n\nRedesign 1 of Original Visualization 2\n\n\n\nRedesigned Graph 2-1\n\n\nDiscussion: This redesign includes clearly labeled axes, and different point shapes were used to reduce overplotting and improve readability.\n\n\nRedesign 2 of Original Visualization 2\n\n\n\nRedesigned Graph 2-2\n\n\nDiscussion: In this version, we used a line plot instead of scatter points to better represent the trend over time."
+  },
+  {
+    "objectID": "redesign.html#concluding-remarks",
+    "href": "redesign.html#concluding-remarks",
+    "title": "Redesign Project",
+    "section": "Concluding Remarks",
+    "text": "Concluding Remarks\n\n\nThrough these redesigns, I’ve aimed to improve both the interpretability and visual clarity of the original visualizations. Specifically:\n\n\n\nOriginal Visualization 1: The use of better color schemes and simplified design made it easier to understand the categories and their relationships.\n\n\nOriginal Visualization 2: Adding labels and changing the plot type helped convey the key message without overwhelming the viewer.\n\n\n\nFurther steps may include incorporating additional data points for more in-depth analysis or experimenting with interactive visualizations."
+  },
+  {
+    "objectID": "redesign.html#references",
+    "href": "redesign.html#references",
+    "title": "Redesign Project",
+    "section": "References",
+    "text": "References\n\nOriginal Visualization 1 Source: Author Name, Year, Link to Source\nOriginal Visualization 2 Source: Author Name, Year, Link to Source\nTools: R, ggplot2, dplyr"
+  },
+  {
+    "objectID": "code.html",
+    "href": "code.html",
+    "title": "Code and References",
+    "section": "",
+    "text": "# Load the dataset (replace \"path_to_your_file.csv\" with the actual file path)\nfile_path &lt;- \"C:\\\\Users\\\\karti\\\\OneDrive\\\\Desktop\\\\Music Streaming Services.csv\"\ndf &lt;- read_csv(file_path, show_col_types = FALSE)\n\n# Clean column names\ndf &lt;- df %&gt;% janitor::clean_names()\n\n# Data cleaning\ndf_clean &lt;- df %&gt;%\n  mutate(\n    price_per_stream = as.numeric(gsub(\"[^0-9\\\\.]\", \"\", average_price_paid_per_stream)),\n    total_users = as.numeric(gsub(\"[^0-9\\\\.]\", \"\", total_users_millions)),\n    indie_label_revenue = as.numeric(gsub(\"[^0-9\\\\.]\", \"\", artist_on_indie_label_receives_per_play_2016)),\n    market_share = as.numeric(gsub(\"[^0-9\\\\.]\", \"\", market_share))\n  ) %&gt;%\n  filter(\n    !is.na(streaming_service) & \n    !is.na(price_per_stream) & \n    !is.na(total_users) & \n    !is.na(market_share)\n  )\n\n# Check cleaned data\nhead(df_clean)\n\n# A tibble: 6 × 21\n  streaming_service average_price_paid_per_s…¹ total_users_millions market_share\n  &lt;chr&gt;             &lt;chr&gt;                                     &lt;dbl&gt;        &lt;dbl&gt;\n1 Napster           $0.019                                      5           0.52\n2 Tidal             $0.0125                                     4.2         0.1 \n3 Apple Music       $0.00735                                   36           7.18\n4 Google Play Music $0.00676                                   10           2.36\n5 Deezer            $0.0064                                    16           2.19\n6 Spotify           $0.00437                                  159          63   \n# ℹ abbreviated name: ¹​average_price_paid_per_stream\n# ℹ 17 more variables: market_revenue &lt;chr&gt;, x10_000 &lt;dbl&gt;,\n#   x2015_v_2017_diff &lt;chr&gt;, percent_free_users &lt;chr&gt;, paid_users &lt;dbl&gt;,\n#   free_ad_supported_users &lt;dbl&gt;,\n#   signed_plays_needed_to_earn_minimum_wage_1_472 &lt;dbl&gt;,\n#   average_streams_per_song &lt;dbl&gt;,\n#   signed_percent_of_users_needed_to_earn_minimum_wage &lt;chr&gt;, …\n\n\n\n# Create an interactive bar chart using ggplot and plotly\np1 &lt;- ggplot(df_clean, aes(x = reorder(streaming_service, price_per_stream), y = price_per_stream, fill = streaming_service)) +\n  geom_bar(stat = \"identity\") +\n  coord_flip() +\n  scale_fill_brewer(palette = \"Set3\") +\n  labs(\n    title = \"Interactive: Average Price Paid per Stream by Streaming Service\",\n    x = \"Streaming Service\",\n    y = \"Price Paid per Stream ($)\"\n  ) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(hjust = 0.5, size = 18, face = \"bold\"),\n    axis.text = element_text(size = 12),\n    axis.title = element_text(size = 14),\n    legend.position = \"none\"\n  )\n\n# Convert ggplot to an interactive plotly plot\np1_interactive &lt;- ggplotly(p1)\np1_interactive\n\n\n\n\n\n\n# Improved Bubble Chart with Interactive Tooltips and Better Color\np3 &lt;- ggplot(df_clean, aes(x = total_users, y = indie_label_revenue, size = market_share, color = streaming_service, label = streaming_service)) +\n  geom_point(alpha = 0.7, shape = 21, aes(fill = streaming_service)) +\n  scale_size_continuous(range = c(5, 15)) +\n  scale_color_viridis_d() +\n  scale_fill_viridis_d() +\n  geom_text_repel(aes(label = streaming_service), size = 3, color = \"black\", max.overlaps = 10) +\n  labs(\n    title = \"Interactive Bubble Chart: Total Users vs. Indie Label Revenue\",\n    x = \"Total Users (Millions)\",\n    y = \"Indie Label Revenue ($ per play)\",\n    size = \"Market Share (%)\",\n    color = \"Streaming Service\"\n  ) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(hjust = 0.5, size = 18, face = \"bold\"),\n    axis.text = element_text(size = 12),\n    axis.title = element_text(size = 14)\n  )\n\n# Convert to an interactive plotly plot\np3_interactive &lt;- ggplotly(p3, tooltip = c(\"label\", \"x\", \"y\", \"size\"))\n\nWarning in geom2trace.default(dots[[1L]][[1L]], dots[[2L]][[1L]], dots[[3L]][[1L]]): geom_GeomTextRepel() has yet to be implemented in plotly.\n  If you'd like to see this geom implemented,\n  Please open an issue with your example code at\n  https://github.com/ropensci/plotly/issues\n\np3_interactive\n\n\n\n\n\n\n# Further Improved Interactive Bubble Chart\nlibrary(ggplot2)\nlibrary(plotly)\nlibrary(ggrepel)\n\n# Improved Bubble Chart with Interactive Tooltips and Better Color\np4 &lt;- ggplot(df_clean, aes(x = total_users, y = indie_label_revenue, size = market_share, color = streaming_service, label = streaming_service)) +\n  geom_point(alpha = 0.7) +\n  scale_size_continuous(range = c(5, 15), guide = guide_legend(title = \"Market Share (%)\")) +\n  scale_color_viridis_d() +\n  geom_text_repel(aes(label = streaming_service), size = 3, color = \"black\", max.overlaps = 10) +\n  labs(\n    title = \"Interactive Bubble Chart: Total Users vs. Indie Label Revenue\",\n    x = \"Total Users (Millions)\",\n    y = \"Indie Label Revenue ($ per play)\",\n    size = \"Market Share (%)\",\n    color = \"Streaming Service\"\n  ) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(hjust = 0.5, size = 18, face = \"bold\"),\n    axis.text = element_text(size = 12),\n    axis.title = element_text(size = 14),\n    legend.position = \"right\"\n  )\n\n# Convert to an interactive plotly plot\np4_interactive &lt;- ggplotly(p4, tooltip = c(\"label\", \"x\", \"y\", \"size\"))\n\nWarning in geom2trace.default(dots[[1L]][[1L]], dots[[2L]][[1L]], dots[[3L]][[1L]]): geom_GeomTextRepel() has yet to be implemented in plotly.\n  If you'd like to see this geom implemented,\n  Please open an issue with your example code at\n  https://github.com/ropensci/plotly/issues\n\np4_interactive\n\n\n\n\n\n\n# Define a custom color palette to accommodate all streaming services\ncustom_colors &lt;- c(\n  \"Youtube\" = \"#F8766D\", \"Spotify\" = \"#7CAE00\", \"Pandora Premium*\" = \"#00BFC4\", \n  \"Apple Music\" = \"#C77CFF\", \"Amazon\" = \"#F564E3\", \"Deezer\" = \"#619CFF\",\n  \"Google Play Music\" = \"#00BA38\", \"Napster\" = \"#B79F00\", \"Tidal\" = \"#FF61C3\"\n)\n\n# Create a bar chart using custom colors\np3 &lt;- ggplot(df_clean, aes(x = reorder(streaming_service, total_users), y = total_users, fill = streaming_service)) +\n  geom_bar(stat = \"identity\") +\n  coord_flip() +\n  scale_fill_manual(values = custom_colors) +  # Custom color palette\n  labs(\n    title = \"Total Users by Streaming Service (in Millions)\",\n    x = \"Streaming Service\",\n    y = \"Total Users (Millions)\"\n  ) +\n  theme_minimal() +\n  theme(\n    plot.title = element_text(hjust = 0.5, size = 18, face = \"bold\"),\n    axis.text = element_text(size = 12),\n    axis.title = element_text(size = 14),\n    legend.position = \"none\"\n  )\n\n# Convert to interactive plot\np3_interactive &lt;- ggplotly(p3)\np3_interactive"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Me",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Hi, I’m Kartik Ghanani, and I am currently pursuing my master’s in data analytics engineering at George Mason University. Originally from India, I completed my B.Tech from Acropolis Institute of Technology in Indore. I have a passion for exploring and analyzing data, transforming complex datasets into meaningful insights that drive decision-making.\nThroughout my journey, I’ve worked on several projects that showcase my skills in data visualization, statistical analysis, and optimization. I’m experienced in using tools like R and Python to solve real-world problems and tell compelling data stories, and these projects are a reflection of my growth and capabilities in the field of data analytics.\nMy goal is to become a skilled data analyst in a reputed company, where I can contribute my expertise and continue learning in the ever-evolving field of data analytics. In my free time, I enjoy playing football, gaming, and table tennis, which helps me stay balanced and energized.\nFeel free to explore my projects and redesigned visualizations on this website!\nFeel free to connect with me on LinkedIn"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "About Me",
+    "title": "Welcome to My STAT 515 Redesign Project",
     "section": "",
-    "text": "Hi, I’m Kartik Ghanani, and I am currently pursuing my master’s in data analytics engineering at George Mason University. Originally from India, I completed my B.Tech from Acropolis Institute of Technology in Indore. I have a passion for exploring and analyzing data, transforming complex datasets into meaningful insights that drive decision-making.\nThroughout my journey, I’ve worked on several projects that showcase my skills in data visualization, statistical analysis, and optimization. I’m experienced in using tools like R and Python to solve real-world problems and tell compelling data stories, and these projects are a reflection of my growth and capabilities in the field of data analytics.\nMy goal is to become a skilled data analyst in a reputed company, where I can contribute my expertise and continue learning in the ever-evolving field of data analytics. In my free time, I enjoy playing football, gaming, and table tennis, which helps me stay balanced and energized.\nFeel free to explore my projects to see how I apply my passion for data to create impactful solutions.\nFeel free to connect with me on LinkedIn"
+    "text": "This project is all about redesigning visualizations to enhance their effectiveness. Explore different sections of the website to learn more!\n\n\nCheck out the Redesign Project where I showcase the original and redesigned visualizations.\n\n\n\nAll code used in this project is shared on the Code and References page, so you can follow along or reuse it for your work.\n\n\n\nWant to know more about me? Visit the About page."
+  },
+  {
+    "objectID": "index.html#explore-my-redesign",
+    "href": "index.html#explore-my-redesign",
+    "title": "Welcome to My STAT 515 Redesign Project",
+    "section": "",
+    "text": "Check out the Redesign Project where I showcase the original and redesigned visualizations."
+  },
+  {
+    "objectID": "index.html#view-the-code",
+    "href": "index.html#view-the-code",
+    "title": "Welcome to My STAT 515 Redesign Project",
+    "section": "",
+    "text": "All code used in this project is shared on the Code and References page, so you can follow along or reuse it for your work."
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Welcome to My STAT 515 Redesign Project",
+    "section": "",
+    "text": "Want to know more about me? Visit the About page."
   }
 ]
