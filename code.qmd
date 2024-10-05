@@ -1,0 +1,217 @@
+---
+title: "Code and References"
+author: "Kartik Ghanani"
+format: html
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# Load necessary libraries
+# Load necessary libraries
+library(readr)       # For reading CSV files
+library(dplyr)       # For data manipulation
+library(janitor)     # For cleaning column names
+library(ggplot2)     # For visualizations
+library(ggrepel)     # For better text labels in plots
+library(plotly)      # For interactive plots
+library(ggiraph)     # For interactive ggplot elements
+
+
+
+
+
+
+
+
+
+```
+
+```{r}
+# Load the dataset (replace "path_to_your_file.csv" with the actual file path)
+file_path <- "C:\\Users\\karti\\OneDrive\\Desktop\\Music Streaming Services.csv"
+df <- read_csv(file_path, show_col_types = FALSE)
+
+# Clean column names
+df <- df %>% janitor::clean_names()
+
+# Data cleaning
+df_clean <- df %>%
+  mutate(
+    price_per_stream = as.numeric(gsub("[^0-9\\.]", "", average_price_paid_per_stream)),
+    total_users = as.numeric(gsub("[^0-9\\.]", "", total_users_millions)),
+    indie_label_revenue = as.numeric(gsub("[^0-9\\.]", "", artist_on_indie_label_receives_per_play_2016)),
+    market_share = as.numeric(gsub("[^0-9\\.]", "", market_share))
+  ) %>%
+  filter(
+    !is.na(streaming_service) & 
+    !is.na(price_per_stream) & 
+    !is.na(total_users) & 
+    !is.na(market_share)
+  )
+
+# Check cleaned data
+head(df_clean)
+
+
+
+
+
+
+
+```
+
+```{r}
+# Create an interactive bar chart using ggplot and plotly
+p1 <- ggplot(df_clean, aes(x = reorder(streaming_service, price_per_stream), y = price_per_stream, fill = streaming_service)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  scale_fill_brewer(palette = "Set3") +
+  labs(
+    title = "Interactive: Average Price Paid per Stream by Streaming Service",
+    x = "Streaming Service",
+    y = "Price Paid per Stream ($)"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 18, face = "bold"),
+    axis.text = element_text(size = 12),
+    axis.title = element_text(size = 14),
+    legend.position = "none"
+  )
+
+# Convert ggplot to an interactive plotly plot
+p1_interactive <- ggplotly(p1)
+p1_interactive
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+
+```{r}
+# Improved Bubble Chart with Interactive Tooltips and Better Color
+p3 <- ggplot(df_clean, aes(x = total_users, y = indie_label_revenue, size = market_share, color = streaming_service, label = streaming_service)) +
+  geom_point(alpha = 0.7, shape = 21, aes(fill = streaming_service)) +
+  scale_size_continuous(range = c(5, 15)) +
+  scale_color_viridis_d() +
+  scale_fill_viridis_d() +
+  geom_text_repel(aes(label = streaming_service), size = 3, color = "black", max.overlaps = 10) +
+  labs(
+    title = "Interactive Bubble Chart: Total Users vs. Indie Label Revenue",
+    x = "Total Users (Millions)",
+    y = "Indie Label Revenue ($ per play)",
+    size = "Market Share (%)",
+    color = "Streaming Service"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 18, face = "bold"),
+    axis.text = element_text(size = 12),
+    axis.title = element_text(size = 14)
+  )
+
+# Convert to an interactive plotly plot
+p3_interactive <- ggplotly(p3, tooltip = c("label", "x", "y", "size"))
+p3_interactive
+
+
+
+
+
+
+
+
+
+
+
+```
+
+
+```{r}
+# Further Improved Interactive Bubble Chart
+library(ggplot2)
+library(plotly)
+library(ggrepel)
+
+# Improved Bubble Chart with Interactive Tooltips and Better Color
+p4 <- ggplot(df_clean, aes(x = total_users, y = indie_label_revenue, size = market_share, color = streaming_service, label = streaming_service)) +
+  geom_point(alpha = 0.7) +
+  scale_size_continuous(range = c(5, 15), guide = guide_legend(title = "Market Share (%)")) +
+  scale_color_viridis_d() +
+  geom_text_repel(aes(label = streaming_service), size = 3, color = "black", max.overlaps = 10) +
+  labs(
+    title = "Interactive Bubble Chart: Total Users vs. Indie Label Revenue",
+    x = "Total Users (Millions)",
+    y = "Indie Label Revenue ($ per play)",
+    size = "Market Share (%)",
+    color = "Streaming Service"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 18, face = "bold"),
+    axis.text = element_text(size = 12),
+    axis.title = element_text(size = 14),
+    legend.position = "right"
+  )
+
+# Convert to an interactive plotly plot
+p4_interactive <- ggplotly(p4, tooltip = c("label", "x", "y", "size"))
+p4_interactive
+
+```
+
+
+
+```{r}
+# Define a custom color palette to accommodate all streaming services
+custom_colors <- c(
+  "Youtube" = "#F8766D", "Spotify" = "#7CAE00", "Pandora Premium*" = "#00BFC4", 
+  "Apple Music" = "#C77CFF", "Amazon" = "#F564E3", "Deezer" = "#619CFF",
+  "Google Play Music" = "#00BA38", "Napster" = "#B79F00", "Tidal" = "#FF61C3"
+)
+
+# Create a bar chart using custom colors
+p3 <- ggplot(df_clean, aes(x = reorder(streaming_service, total_users), y = total_users, fill = streaming_service)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  scale_fill_manual(values = custom_colors) +  # Custom color palette
+  labs(
+    title = "Total Users by Streaming Service (in Millions)",
+    x = "Streaming Service",
+    y = "Total Users (Millions)"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 18, face = "bold"),
+    axis.text = element_text(size = 12),
+    axis.title = element_text(size = 14),
+    legend.position = "none"
+  )
+
+# Convert to interactive plot
+p3_interactive <- ggplotly(p3)
+p3_interactive
+
+
+
+```

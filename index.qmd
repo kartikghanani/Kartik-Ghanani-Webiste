@@ -1,19 +1,21 @@
----
-title: "Website"
----
+# Welcome to My STAT 515 Redesign Project
 
----
-title: "About Me"
----
+This project is all about redesigning visualizations to enhance their effectiveness. Explore different sections of the website to learn more!
 
-![](images/profile-01.jpg){fig-align="center" width="5.2cm"}
+::: card
+## Explore My Redesign
 
-Hi, I'm Kartik Ghanani, and I am currently pursuing my master's in data analytics engineering at George Mason University. Originally from India, I completed my B.Tech from Acropolis Institute of Technology in Indore. I have a passion for exploring and analyzing data, transforming complex datasets into meaningful insights that drive decision-making.
+Check out the [Redesign Project](redesign.qmd) where I showcase the original and redesigned visualizations.
+:::
 
-Throughout my journey, I've worked on several projects that showcase my skills in data visualization, statistical analysis, and optimization. I’m experienced in using tools like R and Python to solve real-world problems and tell compelling data stories, and these projects are a reflection of my growth and capabilities in the field of data analytics.
+::: card
+## View the Code
 
-My goal is to become a skilled data analyst in a reputed company, where I can contribute my expertise and continue learning in the ever-evolving field of data analytics. In my free time, I enjoy playing football, gaming, and table tennis, which helps me stay balanced and energized.
+All code used in this project is shared on the [Code and References](code.qmd) page, so you can follow along or reuse it for your work.
+:::
 
-Feel free to explore my projects to see how I apply my passion for data to create impactful solutions.
+::: card
+## About Me
 
-Feel free to connect with me on [LinkedIn](www.linkedin.com/in/kartik-ghanani-688ab420a)
+Want to know more about me? Visit the [About](about.qmd) page.
+:::

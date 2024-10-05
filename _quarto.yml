@@ -2,21 +2,28 @@ project:
   type: website
 
 website:
-  title: "My Quarto Website"
+  title: "My STAT 515 Redesign Project"
   navbar:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "Portfolio"
-        href: portfolio.qmd
-      - text: "Blog"
-        href: blog.qmd
+      - text: "Redesign Project"
+        href: redesign.qmd
+      - text: "Code and References"
+        href: code.qmd
     right:
       - text: "About"
         href: about.qmd
 
-theme:
-  light: cosmo
-  dark: cyborg
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: cyborg
+    css: styles.css
+    toc: true
+    toc-depth: 2
+    page-layout: full
 
-
+# Add a footer
+metadata-files: ["_metadata.yml"]

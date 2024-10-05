@@ -1,0 +1,119 @@
+---
+title: "Redesign Project"
+---
+
+Welcome to my redesign project, where I present two original visualizations and two redesigns for each. Navigate easily using the buttons below.
+
+## Navigation
+
+<button class="btn-custom">
+
+<a href="#original-visualization-1" style="color: inherit; text-decoration: none;">Original Visualization 1</a>
+
+</button>
+
+<button class="btn-custom">
+
+<a href="#original-visualization-2" style="color: inherit; text-decoration: none;">Original Visualization 2</a>
+
+</button>
+
+<button class="btn-custom">
+
+<a href="#concluding-remarks" style="color: inherit; text-decoration: none;">Concluding Remarks</a>
+
+</button>
+
+------------------------------------------------------------------------
+
+## Original Visualization 1 {#original-visualization-1}
+
+![Original Graph 1](path/to/original_graph1.png)
+
+*Source: [Original Graph 1 Source](#)*
+
+::: card
+<h3>Analysis of Original Visualization 1</h3>
+
+<p>The original graph aimed to show XYZ, but several visual flaws were noted:</p>
+
+<ul>
+
+<li><strong>Issue 1</strong>: The color scheme is ineffective in differentiating the data categories.</li>
+
+<li><strong>Issue 2</strong>: The use of 3D bars adds unnecessary complexity, making it hard to compare values.</li>
+
+</ul>
+:::
+
+### Redesign 1 of Original Visualization 1
+
+![Redesigned Graph 1-1](path/to/redesigned_graph1_1.png)
+
+**Discussion**: In this redesign, the colors were adjusted to improve differentiation, and 3D effects were removed to make the values easier to compare.
+
+### Redesign 2 of Original Visualization 1
+
+![Redesigned Graph 1-2](path/to/redesigned_graph1_2.png)
+
+**Discussion**: In this redesign, additional grid lines were added, and the data categories were sorted in ascending order to make trends more apparent.
+
+------------------------------------------------------------------------
+
+## Original Visualization 2 {#original-visualization-2}
+
+![Original Graph 2](path/to/original_graph2.png)
+
+*Source: [Original Graph 2 Source](#)*
+
+::: card
+<h3>Analysis of Original Visualization 2</h3>
+
+<p>The original graph attempted to visualize ABC but had the following issues:</p>
+
+<ul>
+
+<li><strong>Issue 1</strong>: Lack of labels makes it difficult to interpret what each axis represents.</li>
+
+<li><strong>Issue 2</strong>: Data points are overplotted, obscuring key trends.</li>
+
+</ul>
+:::
+
+### Redesign 1 of Original Visualization 2
+
+![Redesigned Graph 2-1](path/to/redesigned_graph2_1.png)
+
+**Discussion**: This redesign includes clearly labeled axes, and different point shapes were used to reduce overplotting and improve readability.
+
+### Redesign 2 of Original Visualization 2
+
+![Redesigned Graph 2-2](path/to/redesigned_graph2_2.png)
+
+**Discussion**: In this version, we used a line plot instead of scatter points to better represent the trend over time.
+
+------------------------------------------------------------------------
+
+## Concluding Remarks {#concluding-remarks}
+
+::: card
+<p>Through these redesigns, I've aimed to improve both the interpretability and visual clarity of the original visualizations. Specifically:</p>
+
+<ul>
+
+<li><strong>Original Visualization 1</strong>: The use of better color schemes and simplified design made it easier to understand the categories and their relationships.</li>
+
+<li><strong>Original Visualization 2</strong>: Adding labels and changing the plot type helped convey the key message without overwhelming the viewer.</li>
+
+</ul>
+
+<p>Further steps may include incorporating additional data points for more in-depth analysis or experimenting with interactive visualizations.</p>
+:::
+
+------------------------------------------------------------------------
+
+## References
+
+-   Original Visualization 1 Source: Author Name, Year, [Link to Source](#)
+-   Original Visualization 2 Source: Author Name, Year, [Link to Source](#)
+-   Tools: R, ggplot2, dplyr
