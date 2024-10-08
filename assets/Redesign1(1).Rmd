@@ -1,0 +1,64 @@
+---
+title: "Redesign 1-1"
+output: html_document
+---
+
+```{r, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
+# Load necessary libraries
+library(readr)       # For reading CSV files
+library(dplyr)       # For data manipulation
+library(janitor)     # For cleaning column names
+library(ggplot2)     # For visualizations
+library(ggrepel)     # For better text labels in plots
+library(plotly)      # For interactive plots
+library(ggiraph)     # For interactive ggplot elements
+
+# Load the dataset (replace "path_to_your_file.csv" with the actual file path)
+file_path <- "C:\\Users\\karti\\OneDrive\\Desktop\\Music Streaming Services.csv"
+df <- read_csv(file_path, show_col_types = FALSE)
+
+# Clean column names
+df <- df %>% janitor::clean_names()
+
+# Data cleaning
+df_clean <- df %>%
+  mutate(
+    price_per_stream = as.numeric(gsub("[^0-9\\.]", "", average_price_paid_per_stream)),
+    total_users = as.numeric(gsub("[^0-9\\.]", "", total_users_millions)),
+    indie_label_revenue = as.numeric(gsub("[^0-9\\.]", "", artist_on_indie_label_receives_per_play_2016)),
+    market_share = as.numeric(gsub("[^0-9\\.]", "", market_share))
+  ) %>%
+  filter(
+    !is.na(streaming_service) & 
+    !is.na(price_per_stream) & 
+    !is.na(total_users) & 
+    !is.na(market_share)
+  )
+
+# Check cleaned data
+head(df_clean)
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+# Create an interactive bar chart using ggplot and plotly
+p1 <- ggplot(df_clean, aes(x = reorder(streaming_service, price_per_stream), y = price_per_stream, fill = streaming_service)) +
+  geom_bar(stat = "identity") +
+  coord_flip() +
+  scale_fill_brewer(palette = "Set3") +
+  labs(
+    title = "Average Price Paid per Stream by Streaming Service",
+    x = "Streaming Service",
+    y = "Price Paid per Stream ($)"
+  ) +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 18, face = "bold"),
+    axis.text = element_text(size = 12),
+    axis.title = element_text(size = 14),
+    legend.position = "none"
+  )
+
+# Convert ggplot to an interactive plotly plot
+p1_interactive <- ggplotly(p1)
+p1_interactive
+```

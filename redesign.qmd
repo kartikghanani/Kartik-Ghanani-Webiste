@@ -48,13 +48,17 @@ Welcome to my redesign project, where I present two original visualizations and 
 
 ### Redesign 1 of Original Visualization 1
 
-![Redesigned Graph 1-1](path/to/redesigned_graph1_1.png)
+# Redesign 1 of Original Visualization 1
+
+<iframe src="assets/Redesign 1-1.html" width="100%" height="600px">
+
+</iframe>
 
 **Discussion**: In this redesign, the colors were adjusted to improve differentiation, and 3D effects were removed to make the values easier to compare.
 
 ### Redesign 2 of Original Visualization 1
 
-![Redesigned Graph 1-2](path/to/redesigned_graph1_2.png)
+<iframe src="assets/Redesign 1-2.html" width="100%" height="600px"></iframe> 
 
 **Discussion**: In this redesign, additional grid lines were added, and the data categories were sorted in ascending order to make trends more apparent.
 
@@ -82,13 +86,14 @@ Welcome to my redesign project, where I present two original visualizations and 
 
 ### Redesign 1 of Original Visualization 2
 
-![Redesigned Graph 2-1](path/to/redesigned_graph2_1.png)
+<iframe src="assets/Redesign 2-1.html" width="100%" height="600px"></iframe>
 
 **Discussion**: This redesign includes clearly labeled axes, and different point shapes were used to reduce overplotting and improve readability.
 
 ### Redesign 2 of Original Visualization 2
 
-![Redesigned Graph 2-2](path/to/redesigned_graph2_2.png)
+<iframe src="assets/Redesign 2-2.html" width="100%" height="600px">
+
 
 **Discussion**: In this version, we used a line plot instead of scatter points to better represent the trend over time.
 
