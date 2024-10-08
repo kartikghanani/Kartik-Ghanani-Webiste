@@ -2,50 +2,47 @@
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
-  background: linear-gradient(to right, #ffffff, #e6f7ff); /* Light theme gradient background */
-  color: #333; /* Light theme text color - dark gray */
+  background: linear-gradient(to right, #ffffff, #e6f7ff);
+  color: #333;
   padding: 20px;
-  background-attachment: fixed; /* Parallax effect for background */
+  background-attachment: fixed;
 }
 
 body[data-theme='cyborg'] {
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Dark theme gradient background - deep blue */
-  color: #e0e0e0; /* Dark mode text color - light gray */
-  padding: 20px;
-  background-attachment: fixed; /* Parallax effect for dark theme */
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #e0e0e0;
+  background-attachment: fixed;
 }
 
-/* Header styling */
+/* Navbar styling */
 .quarto-navbar {
-  background: linear-gradient(90deg, #007bff, #00b3ff); /* Light theme navbar - gradient */
-  border-bottom: 2px solid #0056b3;
-  padding: 10px 0; /* Added padding to make the navbar more prominent */
-  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4); /* Shadow for navbar */
+  background: linear-gradient(90deg, #007bff, #00b3ff);
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
 }
 
 body[data-theme='cyborg'] .quarto-navbar {
-  background: linear-gradient(90deg, #1c1c1e, #333333); /* Dark theme navbar gradient */
-  border-bottom: 2px solid #3a3a3c;
+  background: linear-gradient(90deg, #1c1c1e, #333333);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 .quarto-navbar a {
-  color: #ffffff !important; /* White text for visibility in both themes */
+  color: #fff !important;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .quarto-navbar a:hover {
-  color: #ffcc00 !important; /* Light gold color for hover effect */
+  color: #ffcc00 !important;
 }
 
-/* Heading styles for more emphasis */
+/* Heading styles with animation */
 h1, h2, h3, h4, h5, h6 {
-  color: inherit; /* Use body text color to ensure headings are readable in both themes */
-  text-transform: uppercase; /* Uppercase headings for more emphasis */
-  letter-spacing: 1px; /* Slightly more spacing for a modern look */
+  color: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   position: relative;
-  animation: fadeInSlideUp 1.5s ease-in-out forwards; /* Animation for headings */
+  animation: fadeInSlideUp 1.5s ease-in-out forwards;
 }
 
 @keyframes fadeInSlideUp {
@@ -59,48 +56,42 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* Button styling with glow effect */
+/* Button styling with hover effect */
 .btn-custom {
-  display: inline-block;
-  margin: 15px 10px;
   padding: 12px 25px;
   font-size: 16px;
   font-weight: bold;
-  color: #ffffff;
-  background: linear-gradient(90deg, #007bff, #00b3ff); /* Gradient for light mode button */
-  border: none;
-  border-radius: 30px; /* Fully rounded buttons for a modern look */
+  color: #fff;
+  background: linear-gradient(90deg, #007bff, #00b3ff);
+  border-radius: 30px;
   text-align: center;
   transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.4s ease;
-  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.6); /* Elevated shadow for buttons */
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.6);
 }
 
 .btn-custom:hover {
-  transform: scale(1.15); /* More pronounced scale-up on hover */
-  box-shadow: 0 12px 25px rgba(0, 86, 179, 0.8), 0 0 20px #00b3ff; /* Glowing shadow for a cool effect */
+  transform: scale(1.15);
+  box-shadow: 0 12px 25px rgba(0, 86, 179, 0.8), 0 0 20px #00b3ff;
 }
 
 body[data-theme='cyborg'] .btn-custom {
-  background: linear-gradient(90deg, #66d9ef, #00ffcc); /* Gradient for dark theme button */
-  color: #000000; /* Black text for better contrast */
-  box-shadow: 0 8px 20px rgba(102, 217, 239, 0.6);
+  background: linear-gradient(90deg, #66d9ef, #00ffcc);
 }
 
 body[data-theme='cyborg'] .btn-custom:hover {
-  transform: scale(1.15);
   box-shadow: 0 12px 25px rgba(51, 192, 212, 0.8), 0 0 20px #00ffcc;
 }
 
-/* Link styling with cool underline animation */
+/* Link styling */
 a {
-  color: #007bff; /* Light theme link color - blue */
+  color: #007bff;
   text-decoration: none;
   position: relative;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #0056b3; /* Darker blue on hover */
+  color: #0056b3;
 }
 
 a::after {
@@ -108,47 +99,41 @@ a::after {
   position: absolute;
   width: 0;
   height: 2px;
-  display: block;
   margin-top: 5px;
   right: 0;
   background: #007bff;
   transition: width 0.5s ease;
-  -webkit-transition: width 0.5s ease;
 }
 
 a:hover::after {
   width: 100%;
   left: 0;
-  background: #0056b3; /* Matches hover color */
+  background: #0056b3;
 }
 
-/* Card styling with gradient borders and animation */
+/* Card styling with gradient borders */
 .card {
-  border-radius: 15px; /* Rounded corners for cards */
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15); /* Light shadow for elevation */
+  border-radius: 15px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
   padding: 25px;
-  margin-bottom: 30px;
-  background: linear-gradient(to bottom, #ffffff, #f0f0f0); /* Gradient background for cards */
+  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
   border-left: 6px solid #007bff;
-  color: #222; /* Card text color - dark gray */
+  color: #222;
   transition: box-shadow 0.4s ease, transform 0.4s ease;
-  animation: fadeInSlideUp 1s ease-in-out forwards; /* Fade in and slide up on load */
+  animation: fadeInSlideUp 1s ease-in-out forwards;
 }
 
 .card:hover {
-  transform: translateY(-8px); /* Larger lift on hover for a 3D effect */
-  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  transform: translateY(-8px);
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
 }
 
 body[data-theme='cyborg'] .card {
-  background: linear-gradient(to bottom, #2a2a2e, #3a3a3e); /* Dark gradient for cards */
-  color: #f0f0f0; /* Light text for readability in dark theme */
-  border-left: 6px solid #66d9ef; /* Bright cyan border for dark mode */
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(to bottom, #2a2a2e, #3a3a3e);
+  border-left: 6px solid #66d9ef;
 }
 
 body[data-theme='cyborg'] .card:hover {
-  transform: translateY(-8px);
   box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.8);
 }
 
@@ -156,34 +141,23 @@ body[data-theme='cyborg'] .card:hover {
 footer {
   text-align: center;
   padding: 20px;
-  background: linear-gradient(90deg, #007bff, #00b3ff); /* Light theme footer background - gradient */
-  color: #ffffff;
-  font-weight: bold;
-  box-shadow: 0 0 15px rgba(0, 123, 255, 0.4);
+  background: linear-gradient(90deg, #007bff, #00b3ff);
+  color: #fff;
 }
 
 body[data-theme='cyborg'] footer {
-  background: linear-gradient(90deg, #1c1c1e, #333333); /* Dark theme footer gradient */
+  background: linear-gradient(90deg, #1c1c1e, #333333);
   color: #66d9ef;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 }
 
-/* Styling for navigation on the right (ToC) */
+/* Table of Contents styling */
 .toc {
-  background: linear-gradient(to bottom, #f9f9f9, #e6e6e6); /* Light theme gradient for ToC */
+  background: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
   padding: 15px;
-  color: #333;
   border-radius: 10px;
 }
 
 body[data-theme='cyborg'] .toc {
-  background: linear-gradient(to bottom, #2a2a2e, #3a3a3e); /* Dark theme gradient for ToC */
-  color: #66d9ef; /* Bright cyan text color for dark theme ToC */
+  background: linear-gradient(to bottom, #2a2a2e, #3a3a3e);
   border: 1px solid #444444;
-  border-radius: 10px;
 }
-
-/* Additional Animations */
-@keyframes fadeInSlideUp {
-  0% {
-    opacity: 
