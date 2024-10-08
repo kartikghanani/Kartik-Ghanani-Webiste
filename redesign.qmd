@@ -7,21 +7,15 @@ Welcome to my redesign project, where I present two original visualizations and 
 ## Navigation
 
 <button class="btn-custom">
-
 <a href="#original-visualization-1" style="color: inherit; text-decoration: none;">Original Visualization 1</a>
-
 </button>
 
 <button class="btn-custom">
-
 <a href="#original-visualization-2" style="color: inherit; text-decoration: none;">Original Visualization 2</a>
-
 </button>
 
 <button class="btn-custom">
-
 <a href="#concluding-remarks" style="color: inherit; text-decoration: none;">Concluding Remarks</a>
-
 </button>
 
 ------------------------------------------------------------------------
@@ -48,11 +42,7 @@ Welcome to my redesign project, where I present two original visualizations and 
 
 ### Redesign 1 of Original Visualization 1
 
-# Redesign 1 of Original Visualization 1
-
-<iframe src="assets/Redesign 1-1.html" width="100%" height="600px">
-
-</iframe>
+<iframe src="assets/Redesign 1-1.html" width="100%" height="600px"></iframe>
 
 **Discussion**: In this redesign, the colors were adjusted to improve differentiation, and 3D effects were removed to make the values easier to compare.
 
@@ -92,8 +82,7 @@ Welcome to my redesign project, where I present two original visualizations and 
 
 ### Redesign 2 of Original Visualization 2
 
-<iframe src="assets/Redesign 2-2.html" width="100%" height="600px">
-
+<iframe src="assets/Redesign 2-2.html" width="100%" height="600px"></iframe>
 
 **Discussion**: In this version, we used a line plot instead of scatter points to better represent the trend over time.
 
