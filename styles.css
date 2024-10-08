@@ -42,6 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   letter-spacing: 1px;
   position: relative;
+  margin-bottom: 20px;
   animation: fadeInSlideUp 1.5s ease-in-out forwards;
 }
 
@@ -65,6 +66,8 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(90deg, #007bff, #00b3ff);
   border-radius: 30px;
   text-align: center;
+  margin-top: 15px;
+  display: inline-block;
   transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.4s ease;
   box-shadow: 0 8px 20px rgba(0, 123, 255, 0.6);
 }
@@ -116,6 +119,7 @@ a:hover::after {
   border-radius: 15px;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
   padding: 25px;
+  margin: 20px 0;
   background: linear-gradient(to bottom, #ffffff, #f0f0f0);
   border-left: 6px solid #007bff;
   color: #222;
@@ -143,6 +147,7 @@ footer {
   padding: 20px;
   background: linear-gradient(90deg, #007bff, #00b3ff);
   color: #fff;
+  margin-top: 30px;
 }
 
 body[data-theme='cyborg'] footer {
@@ -160,4 +165,26 @@ body[data-theme='cyborg'] footer {
 body[data-theme='cyborg'] .toc {
   background: linear-gradient(to bottom, #2a2a2e, #3a3a3e);
   border: 1px solid #444444;
+}
+
+/* Index Page specific - Spacing between sections */
+.index-section {
+  margin-bottom: 40px;
+}
+
+.index-section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.index-section p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Card-specific spacing on index page */
+.index-card {
+  margin-bottom: 30px;
+  padding: 20px;
 }
