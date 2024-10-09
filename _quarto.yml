@@ -7,9 +7,9 @@ website:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "Redesign Project"
+      - text: "Project"
         href: redesign.qmd
-      - text: "Code and References"
+      - text: "Code"
         href: code.qmd
     right:
       - text: "About"

@@ -1,5 +1,5 @@
 ---
-title: "Redesign Project"
+title: "Project"
 ---
 
 Welcome to my redesign project, where I present two original visualizations and two redesigns for each. Navigate easily using the buttons below.
@@ -108,7 +108,7 @@ p1_interactive <- ggplotly(p1)
 p1_interactive
 ```
 
-**Discussion**: Here we Simplified the original cluttered design with overlapping lines by using a bar chart.We Used consistent colours and Plotly to make the chart interactive, allowing users to hover over each bar for detailed values.
+**Discussion**: Here we Simplified the original cluttered design with overlapping lines by using a bar chart and We Used consistent colours and Plotly to make the chart interactive, allowing users to hover over each bar for detailed values.
 
 ### Redesign 2
 
@@ -144,7 +144,7 @@ p4_interactive <- ggplotly(p4, tooltip = c("label", "x", "y", "size"))
 p4_interactive
 ```
 
-**Discussion**:Enhanced the clarity by replacing tangled lines with a bubble chart.We Added interactive features with Plotly, enabling users to hover over bubbles to see total users and revenue details.
+**Discussion**:Enhanced the clarity by replacing tangled lines with a bubble chart and We Added interactive features with Plotly, enabling users to hover over bubbles to see total users and revenue details.
 
 ------------------------------------------------------------------------
 
@@ -230,7 +230,8 @@ interactive_line_plot
 
 ```
 
-**Discussion**: We Focused on emphasizing the gender gap in literacy rates.We Used Plotly’s interactive capabilities to let users explore specific data points for male and female literacy rates over time.
+
+**Discussion**: We Focused on emphasizing the gender gap in literacy rates and We Used Plotly’s interactive capabilities to let users explore specific data points for male and female literacy rates over time.
 
 ### Redesign 2
 
@@ -317,7 +318,7 @@ interactive_plot
 
 ```
 
-**Discussion**: We Improved trend comparison by combining male and female data.We added interactive features using Plotly, allowing users to hover over the chart for specific year-by-year literacy rate comparisons.
+**Discussion**: We Improved trend comparison by combining male and female data and We added interactive features using Plotly, allowing users to hover over the chart for specific year-by-year literacy rate comparisons.
 
 ------------------------------------------------------------------------
 
