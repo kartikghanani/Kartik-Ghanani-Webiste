@@ -334,4 +334,4 @@ interactive_plot
 
 -   Music Streaming Services Comparison: Dr Stephanie Starling, Miriam Quick, 2018, [See the Source](https://informationisbeautiful.net/visualizations/spotify-apple-music-tidal-music-streaming-services-royalty-rates-compared/)
 -   Global Literacy Rates: Johan Norberg, 2016, [See the Source](#)
--   Tools: R, ggplot2, dplyr, plotly, ggiraph, ggrepel
+-   Tools: R, ggplot2, dplyr, plotly, ggiraph, ggrepel, tidyr, readr

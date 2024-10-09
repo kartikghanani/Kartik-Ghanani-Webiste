@@ -14,7 +14,7 @@ library(ggrepel)     # For better text labels in plots
 library(plotly)      # For interactive plots
 library(ggiraph)     # For interactive ggplot elements
 
-# Load the dataset (replace "path_to_your_file.csv" with the actual file path)
+# Load the dataset
 file_path <- "C:\\Users\\karti\\OneDrive\\Desktop\\Music Streaming Services.csv"
 df <- read_csv(file_path, show_col_types = FALSE)
 
@@ -46,7 +46,7 @@ p1 <- ggplot(df_clean, aes(x = reorder(streaming_service, price_per_stream), y =
   coord_flip() +
   scale_fill_brewer(palette = "Set3") +
   labs(
-    title = "Interactive: Average Price Paid per Stream by Streaming Service",
+    title = "Average Price Paid per Stream by Streaming Service",
     x = "Streaming Service",
     y = "Price Paid per Stream ($)"
   ) +
@@ -63,22 +63,19 @@ p1_interactive <- ggplotly(p1)
 p1_interactive
 ```
 
-
-
 ```{r,results='hide', message=FALSE, warning=FALSE}
-# Further Improved Interactive Bubble Chart
 library(ggplot2)
 library(plotly)
 library(ggrepel)
 
-# Improved Bubble Chart with Interactive Tooltips and Better Color
+#  Bubble Chart 
 p4 <- ggplot(df_clean, aes(x = total_users, y = indie_label_revenue, size = market_share, color = streaming_service, label = streaming_service)) +
   geom_point(alpha = 0.7) +
   scale_size_continuous(range = c(5, 15), guide = guide_legend(title = "Market Share (%)")) +
   scale_color_viridis_d() +
   geom_text_repel(aes(label = streaming_service), size = 3, color = "black", max.overlaps = 10) +
   labs(
-    title = "Interactive Bubble Chart: Total Users vs. Indie Label Revenue",
+    title = "Total Users vs. Indie Label Revenue",
     x = "Total Users (Millions)",
     y = "Indie Label Revenue ($ per play)",
     size = "Market Share (%)",
@@ -106,13 +103,13 @@ library(ggplot2)
 library(plotly)
 
 # Load the dataset
-file_path <- "C:\\Users\\karti\\OneDrive\\Desktop\\Female and Male Literacy Rates.csv" # Update with the correct path
+file_path <- "C:\\Users\\karti\\OneDrive\\Desktop\\Female and Male Literacy Rates.csv" 
 df <- read_csv(file_path)
 
 # Rename columns for easier reference
 df_clean <- df %>%
   rename(
-    year = year,  # Assuming the column is named "Year"
+    year = year,  
     female_literacy = `global adult female literacy rate (%)`,
     male_literacy = `global adult male literacy rate (%)`
   ) %>%
@@ -220,3 +217,15 @@ interactive_plot
 
 
 ```
+
+### References (APA Format):
+
+1.  R Core Team. (2023). *R: A language and environment for statistical computing* (Version 4.0) \[Software\]. R Foundation for Statistical Computing. <https://www.R-project.org/>
+
+2.  Wickham, H. (2016). *ggplot2: Elegant graphics for data analysis*. Springer-Verlag New York. <https://ggplot2.tidyverse.org>
+
+3.  Wickham, H., & Henry, L. (2021). *dplyr: A Grammar of Data Manipulation* (R package version 1.0.7). <https://CRAN.R-project.org/package=dplyr>
+
+4.  Hadley Wickham, Lionel Henry, Thomas Lin Pedersen (2022). *ggrepel*: Automatically Position Non-Overlapping Text Labels with 'ggplot2'. <https://CRAN.R-project.org/package=ggrepel>
+
+5.  Sievert, C. (2020). *Interactive Web-Based Data Visualization with R, plotly, and shiny*. Chapman and Hall/CRC.
