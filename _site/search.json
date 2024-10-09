@@ -18,7 +18,7 @@
     "href": "redesign.html#original-visualization-1",
     "title": "Project",
     "section": "Music Streaming Services Comparison",
-    "text": "Music Streaming Services Comparison\n\nSource: information is beautiful\n\n\nAnalysis of Music Streaming Services Comparison\n\n\nThis graph compares various major music streaming services, focusing on metrics like average artist revenue per play, total users, percentage of free users, and estimated annual loss. While the intent is clear—highlighting the disparities in how different services pay artists—the visualization presents several issues.\n\n\n\nIssue 1: The original graph had overlapping lines that created visual clutter, making it difficult to distinguish between the different streaming services.\n\n\nIssue 2: The inconsistent use of colors made it hard to track and compare key metrics like revenue per play and total users, leading to confusion in interpreting the data.\n\n\n\n\nRedesign 1\n\n\n\n\n\n\nDiscussion: Here we Simplified the original cluttered design with overlapping lines by using a bar chart and We Used consistent colours and Plotly to make the chart interactive, allowing users to hover over each bar for detailed values.\n\n\nRedesign 2\n\n\n\n\n\n\nDiscussion:Enhanced the clarity by replacing tangled lines with a bubble chart.We Added interactive features with Plotly, enabling users to hover over bubbles to see total users and revenue details."
+    "text": "Music Streaming Services Comparison\n\nSource: information is beautiful\n\n\nAnalysis of Music Streaming Services Comparison\n\n\nThis graph compares various major music streaming services, focusing on metrics like average artist revenue per play, total users, percentage of free users, and estimated annual loss. While the intent is clear—highlighting the disparities in how different services pay artists—the visualization presents several issues.\n\n\n\nIssue 1: The original graph had overlapping lines that created visual clutter, making it difficult to distinguish between the different streaming services.\n\n\nIssue 2: The inconsistent use of colors made it hard to track and compare key metrics like revenue per play and total users, leading to confusion in interpreting the data.\n\n\n\n\nRedesign 1\n\n\n\n\n\n\nDiscussion: Here we Simplified the original cluttered design with overlapping lines by using a bar chart and We Used consistent colours and Plotly to make the chart interactive, allowing users to hover over each bar for detailed values.\n\n\nRedesign 2\n\n\n\n\n\n\nDiscussion:Enhanced the clarity by replacing tangled lines with a bubble chart and We Added interactive features with Plotly, enabling users to hover over bubbles to see total users and revenue details."
   },
   {
     "objectID": "redesign.html#original-visualization-2",
@@ -60,14 +60,14 @@
     "href": "index.html",
     "title": "Welcome!",
     "section": "",
-    "text": "RedesignHub focuses on improving visualizations to enhance their effectiveness. Explore different sections of the website and learn about the redesign process!\n\n\n\nCheck out the project overview video to understand the motivation behind the redesigns. Click the link to view the video on YouTube.\n\n\n\nProject Overview\n\n\n\n\n\n\nHead over to the Redesign Project to see the original visualizations alongside their redesigned counterparts. Discover how effective visual communication can improve data interpretation!\n\n\n\n\nAll the code used in this project is available on the Code and References page. Feel free to explore and adapt it for your own projects!\n\n\n\n\nWant to know more about me? Visit the About page to learn about my journey, background, and interests."
+    "text": "RedesignHub focuses on improving visualizations to enhance their effectiveness. Explore different sections of the website and learn about the redesign process!\n\n\n\nCheck out the project overview video to understand the motivation behind the redesigns. Click the link to view the video on YouTube.\n\n\n\n\n\n\n\n\nHead over to the Redesign Project to see the original visualizations alongside their redesigned counterparts. Discover how effective visual communication can improve data interpretation!\n\n\n\n\nAll the code used in this project is available on the Code and References page. Feel free to explore and adapt it for your own projects!\n\n\n\n\nWant to know more about me? Visit the About page to learn about my journey, background, and interests."
   },
   {
     "objectID": "index.html#watch-the-project-overview",
     "href": "index.html#watch-the-project-overview",
     "title": "Welcome!",
     "section": "",
-    "text": "Check out the project overview video to understand the motivation behind the redesigns. Click the link to view the video on YouTube.\n\n\n\nProject Overview"
+    "text": "Check out the project overview video to understand the motivation behind the redesigns. Click the link to view the video on YouTube."
   },
   {
     "objectID": "index.html#explore-my-redesign",

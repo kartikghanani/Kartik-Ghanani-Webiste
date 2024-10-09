@@ -1,16 +1,21 @@
-# Welcome! 
+# Welcome!
 
- RedesignHub focuses on improving visualizations to enhance their effectiveness. Explore different sections of the website and learn about the redesign process!
+RedesignHub focuses on improving visualizations to enhance their effectiveness. Explore different sections of the website and learn about the redesign process!
 
----
+------------------------------------------------------------------------
 
 ## 🎥 Watch the Project Overview
 
 Check out the project overview video to understand the motivation behind the redesigns. Click the link to view the video on YouTube.
 
-[![Project Overview](images/overview_thumbnail.png)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID){target="_blank"}
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DgIfea3Wqmk" 
+title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
----
+
+------------------------------------------------------------------------
 
 ::: card
 ## 🚀 Explore My Redesign
@@ -18,7 +23,7 @@ Check out the project overview video to understand the motivation behind the red
 Head over to the [Redesign Project](redesign.qmd) to see the original visualizations alongside their redesigned counterparts. Discover how effective visual communication can improve data interpretation!
 :::
 
----
+------------------------------------------------------------------------
 
 ::: card
 ## 💻 View the Code
@@ -26,7 +31,7 @@ Head over to the [Redesign Project](redesign.qmd) to see the original visualizat
 All the code used in this project is available on the [Code and References](code.qmd) page. Feel free to explore and adapt it for your own projects!
 :::
 
----
+------------------------------------------------------------------------
 
 ::: card
 ## 👤 About Me
