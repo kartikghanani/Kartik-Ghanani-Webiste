@@ -1,21 +1,35 @@
-# Welcome to My STAT 515 Redesign Project
+# Welcome! 
 
-This project is all about redesigning visualizations to enhance their effectiveness. Explore different sections of the website to learn more!
+ RedesignHub focuses on improving visualizations to enhance their effectiveness. Explore different sections of the website and learn about the redesign process!
+
+---
+
+## 🎥 Watch the Project Overview
+
+Check out the project overview video to understand the motivation behind the redesigns. Click the link to view the video on YouTube.
+
+[![Project Overview](images/overview_thumbnail.png)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID){target="_blank"}
+
+---
 
 ::: card
-## Explore My Redesign
+## 🚀 Explore My Redesign
 
-Check out the [Redesign Project](redesign.qmd) where I showcase the original and redesigned visualizations.
+Head over to the [Redesign Project](redesign.qmd) to see the original visualizations alongside their redesigned counterparts. Discover how effective visual communication can improve data interpretation!
 :::
 
-::: card
-## View the Code
+---
 
-All code used in this project is shared on the [Code and References](code.qmd) page, so you can follow along or reuse it for your work.
+::: card
+## 💻 View the Code
+
+All the code used in this project is available on the [Code and References](code.qmd) page. Feel free to explore and adapt it for your own projects!
 :::
 
-::: card
-## About Me
+---
 
-Want to know more about me? Visit the [About](about.qmd) page.
+::: card
+## 👤 About Me
+
+Want to know more about me? Visit the [About](about.qmd) page to learn about my journey, background, and interests.
 :::

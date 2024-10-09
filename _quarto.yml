@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "My STAT 515 Redesign Project"
+  title: "RedesignHub"
   navbar:
     left:
       - text: "Home"
@@ -24,6 +24,3 @@ format:
     toc: true
     toc-depth: 2
     page-layout: full
-
-# Add a footer
-metadata-files: ["_metadata.yml"]

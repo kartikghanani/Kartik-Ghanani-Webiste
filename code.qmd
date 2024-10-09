@@ -4,7 +4,7 @@ author: "Kartik Ghanani"
 format: html
 ---
 
-```{r}
+```{r,results='hide', message=FALSE, warning=FALSE}
 # Load necessary libraries
 library(readr)       # For reading CSV files
 library(dplyr)       # For data manipulation
@@ -65,7 +65,7 @@ p1_interactive
 
 
 
-```{r}
+```{r,results='hide', message=FALSE, warning=FALSE}
 # Further Improved Interactive Bubble Chart
 library(ggplot2)
 library(plotly)
@@ -98,7 +98,7 @@ p4_interactive
 
 ```
 
-```{r}
+```{r,results='hide', message=FALSE, warning=FALSE}
 library(readr)
 library(dplyr)
 library(tidyr)
@@ -154,7 +154,7 @@ interactive_line_plot <- ggplotly(line_plot)
 interactive_line_plot
 ```
 
-```{r}
+```{r,results='hide', message=FALSE, warning=FALSE}
 # Load necessary libraries
 library(ggplot2)   # For plotting
 library(dplyr)     # For data manipulation

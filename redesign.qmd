@@ -30,23 +30,23 @@ Welcome to my redesign project, where I present two original visualizations and 
 
 ![](images/Music.png)
 
-*Source: [Original Graph 1 Source](#)*
+*Source:* [information is beautiful](https://informationisbeautiful.net/visualizations/spotify-apple-music-tidal-music-streaming-services-royalty-rates-compared/)
 
 ::: card
 <h3>Analysis of Music Streaming Services Comparison</h3>
 
-<p>The original graph aimed to show XYZ, but several visual flaws were noted:</p>
+<p>This graph compares various major music streaming services, focusing on metrics like average artist revenue per play, total users, percentage of free users, and estimated annual loss. While the intent is clear—highlighting the disparities in how different services pay artists—the visualization presents several issues.</p>
 
 <ul>
 
-<li><strong>Issue 1</strong>: The color scheme is ineffective in differentiating the data categories.</li>
+<li><strong>Issue 1</strong>: The original graph had overlapping lines that created visual clutter, making it difficult to distinguish between the different streaming services.</li>
 
-<li><strong>Issue 2</strong>: The use of 3D bars adds unnecessary complexity, making it hard to compare values.</li>
+<li><strong>Issue 2</strong>: The inconsistent use of colors made it hard to track and compare key metrics like revenue per play and total users, leading to confusion in interpreting the data.</li>
 
 </ul>
 :::
 
-### Redesign 1 
+### Redesign 1
 
 ```{r, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 # Load necessary libraries
@@ -108,9 +108,9 @@ p1_interactive <- ggplotly(p1)
 p1_interactive
 ```
 
-**Discussion**: In this redesign, the colors were adjusted to improve differentiation, and 3D effects were removed to make the values easier to compare.
+**Discussion**: Here we Simplified the original cluttered design with overlapping lines by using a bar chart.We Used consistent colours and Plotly to make the chart interactive, allowing users to hover over each bar for detailed values.
 
-### Redesign 2 
+### Redesign 2
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 # Further Improved Interactive Bubble Chart
@@ -144,31 +144,31 @@ p4_interactive <- ggplotly(p4, tooltip = c("label", "x", "y", "size"))
 p4_interactive
 ```
 
-**Discussion**: In this redesign, additional grid lines were added, and the data categories were sorted in ascending order to make trends more apparent.
+**Discussion**:Enhanced the clarity by replacing tangled lines with a bubble chart.We Added interactive features with Plotly, enabling users to hover over bubbles to see total users and revenue details.
 
 ------------------------------------------------------------------------
 
 ## Global Literacy Rates {#original-visualization-2}
 
-![](images/Literacy rates.png){width="15.2cm"}
+![](images/Literacy%20rates.png){width="15.2cm"}
 
-*Source: [Original Graph 2 Source](#)*
+*Source:* [beautiful news daily](https://informationisbeautiful.net/beautifulnews/86-literacy-rates-equal/)
 
 ::: card
 <h3>Analysis of Global Literacy Rates</h3>
 
-<p>The original graph attempted to visualize ABC but had the following issues:</p>
+<p>This graph compares global literacy rates between females and males from 1976 to 2017. The key takeaway is that literacy rates for both genders have increased, with female literacy rising from 61% to 83% and male literacy dropping slightly from 90% to 77%, showing a narrowing gap between the two.</p>
 
 <ul>
 
-<li><strong>Issue 1</strong>: Lack of labels makes it difficult to interpret what each axis represents.</li>
+<li><strong>Issue 1</strong>: The graph didn’t clearly show how the gap between male and female literacy rates was closing, making it harder to compare their progress.</li>
 
-<li><strong>Issue 2</strong>: Data points are overplotted, obscuring key trends.</li>
+<li><strong>Issue 2</strong>: he lack of overlapping lines made it difficult to see how female literacy rates were improving relative to male literacy rates.</li>
 
 </ul>
 :::
 
-### Redesign 1 
+### Redesign 1
 
 ```{r, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 library(readr)
@@ -230,9 +230,9 @@ interactive_line_plot
 
 ```
 
-**Discussion**: This redesign includes clearly labeled axes, and different point shapes were used to reduce overplotting and improve readability.
+**Discussion**: We Focused on emphasizing the gender gap in literacy rates.We Used Plotly’s interactive capabilities to let users explore specific data points for male and female literacy rates over time.
 
-### Redesign 2 
+### Redesign 2
 
 ```{r, echo=FALSE, results='hide', message=FALSE, warning=FALSE}
 # Load necessary libraries
@@ -317,30 +317,20 @@ interactive_plot
 
 ```
 
-**Discussion**: In this version, we used a line plot instead of scatter points to better represent the trend over time.
+**Discussion**: We Improved trend comparison by combining male and female data.We added interactive features using Plotly, allowing users to hover over the chart for specific year-by-year literacy rate comparisons.
 
 ------------------------------------------------------------------------
 
-## Concluding Remarks {#concluding-remarks}
+## Conclusion {#concluding-remarks}
 
 ::: card
-<p>Through these redesigns, I've aimed to improve both the interpretability and visual clarity of the original visualizations. Specifically:</p>
-
-<ul>
-
-<li><strong>Music Streaming Services Comparison</strong>: The use of better color schemes and simplified design made it easier to understand the categories and their relationships.</li>
-
-<li><strong>Global Literacy Rates</strong>: Adding labels and changing the plot type helped convey the key message without overwhelming the viewer.</li>
-
-</ul>
-
-<p>Further steps may include incorporating additional data points for more in-depth analysis or experimenting with interactive visualizations.</p>
+<p>Through the redesign of the original visualizations, we have enhanced the overall clarity, interpretability, and engagement of the data. By simplifying the layouts, using consistent colours, and removing unnecessary visual clutter, the comparisons between different variables are now much clearer. Furthermore, by integrating interactive features using Plotly, we have allowed users to explore the data more deeply and interactively. These changes make the visualizations more effective in conveying the key messages while ensuring a more engaging user experience.</p>
 :::
 
 ------------------------------------------------------------------------
 
 ## References
 
--   Original Visualization 1 Source: Author Name, Year, [Link to Source](#)
--   Original Visualization 2 Source: Author Name, Year, [Link to Source](#)
--   Tools: R, ggplot2, dplyr
+-   Music Streaming Services Comparison: Dr Stephanie Starling, Miriam Quick, 2018, [See the Source](https://informationisbeautiful.net/visualizations/spotify-apple-music-tidal-music-streaming-services-royalty-rates-compared/)
+-   Global Literacy Rates: Johan Norberg, 2016, [See the Source](#)
+-   Tools: R, ggplot2, dplyr, plotly, ggiraph, ggrepel
