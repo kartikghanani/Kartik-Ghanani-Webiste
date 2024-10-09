@@ -18,28 +18,28 @@
     "href": "redesign.html#original-visualization-1",
     "title": "Redesign Project",
     "section": "Music Streaming Services Comparison",
-    "text": "Music Streaming Services Comparison\n\nSource: information is beautiful\n\n\nAnalysis of Music Streaming Services Comparison\n\n\nThe original graph aimed to show XYZ, but several visual flaws were noted:\n\n\n\nIssue 1: The color scheme is ineffective in differentiating the data categories.\n\n\nIssue 2: The use of 3D bars adds unnecessary complexity, making it hard to compare values.\n\n\n\n\nRedesign 1\n\n\n\n\n\n\nDiscussion: In this redesign, the colors were adjusted to improve differentiation, and 3D effects were removed to make the values easier to compare.\n\n\nRedesign 2\n\n\n\n\n\n\nDiscussion: In this redesign, additional grid lines were added, and the data categories were sorted in ascending order to make trends more apparent."
+    "text": "Music Streaming Services Comparison\n\nSource: information is beautiful\n\n\nAnalysis of Music Streaming Services Comparison\n\n\nThis graph compares various major music streaming services, focusing on metrics like average artist revenue per play, total users, percentage of free users, and estimated annual loss. While the intent is clear—highlighting the disparities in how different services pay artists—the visualization presents several issues.\n\n\n\nIssue 1: The original graph had overlapping lines that created visual clutter, making it difficult to distinguish between the different streaming services.\n\n\nIssue 2: The inconsistent use of colors made it hard to track and compare key metrics like revenue per play and total users, leading to confusion in interpreting the data.\n\n\n\n\nRedesign 1\n\n\n\n\n\n\nDiscussion: Here we Simplified the original cluttered design with overlapping lines by using a bar chart.We Used consistent colours and Plotly to make the chart interactive, allowing users to hover over each bar for detailed values.\n\n\nRedesign 2\n\n\n\n\n\n\nDiscussion:Enhanced the clarity by replacing tangled lines with a bubble chart.We Added interactive features with Plotly, enabling users to hover over bubbles to see total users and revenue details."
   },
   {
     "objectID": "redesign.html#original-visualization-2",
     "href": "redesign.html#original-visualization-2",
     "title": "Redesign Project",
     "section": "Global Literacy Rates",
-    "text": "Global Literacy Rates\n\nSource: beautiful news daily\n\n\nAnalysis of Global Literacy Rates\n\n\nThe original graph attempted to visualize ABC but had the following issues:\n\n\n\nIssue 1: Lack of labels makes it difficult to interpret what each axis represents.\n\n\nIssue 2: Data points are overplotted, obscuring key trends.\n\n\n\n\nRedesign 1\n\n\n\n\n\n\nDiscussion: This redesign includes clearly labeled axes, and different point shapes were used to reduce overplotting and improve readability.\n\n\nRedesign 2\n\n\n\n\n\n\nDiscussion: In this version, we used a line plot instead of scatter points to better represent the trend over time."
+    "text": "Global Literacy Rates\n\nSource: beautiful news daily\n\n\nAnalysis of Global Literacy Rates\n\n\nThis graph compares global literacy rates between females and males from 1976 to 2017. The key takeaway is that literacy rates for both genders have increased, with female literacy rising from 61% to 83% and male literacy dropping slightly from 90% to 77%, showing a narrowing gap between the two.\n\n\n\nIssue 1: The graph didn’t clearly show how the gap between male and female literacy rates was closing, making it harder to compare their progress.\n\n\nIssue 2: he lack of overlapping lines made it difficult to see how female literacy rates were improving relative to male literacy rates.\n\n\n\n\nRedesign 1\n\n\n\n\n\n\nDiscussion: We Focused on emphasizing the gender gap in literacy rates.We Used Plotly’s interactive capabilities to let users explore specific data points for male and female literacy rates over time.\n\n\nRedesign 2\n\n\n\n\n\n\nDiscussion: We Improved trend comparison by combining male and female data.We added interactive features using Plotly, allowing users to hover over the chart for specific year-by-year literacy rate comparisons."
   },
   {
     "objectID": "redesign.html#concluding-remarks",
     "href": "redesign.html#concluding-remarks",
     "title": "Redesign Project",
-    "section": "Concluding Remarks",
-    "text": "Concluding Remarks\n\n\nThrough these redesigns, I’ve aimed to improve both the interpretability and visual clarity of the original visualizations. Specifically:\n\n\n\nMusic Streaming Services Comparison: The use of better color schemes and simplified design made it easier to understand the categories and their relationships.\n\n\nGlobal Literacy Rates: Adding labels and changing the plot type helped convey the key message without overwhelming the viewer.\n\n\n\nFurther steps may include incorporating additional data points for more in-depth analysis or experimenting with interactive visualizations."
+    "section": "Conclusion",
+    "text": "Conclusion\n\n\nThrough the redesign of the original visualizations, we have enhanced the overall clarity, interpretability, and engagement of the data. By simplifying the layouts, using consistent colours, and removing unnecessary visual clutter, the comparisons between different variables are now much clearer. Furthermore, by integrating interactive features using Plotly, we have allowed users to explore the data more deeply and interactively. These changes make the visualizations more effective in conveying the key messages while ensuring a more engaging user experience."
   },
   {
     "objectID": "redesign.html#references",
     "href": "redesign.html#references",
     "title": "Redesign Project",
     "section": "References",
-    "text": "References\n\nOriginal Visualization 1 Source: Author Name, Year, Link to Source\nOriginal Visualization 2 Source: Author Name, Year, Link to Source\nTools: R, ggplot2, dplyr"
+    "text": "References\n\nMusic Streaming Services Comparison: Dr Stephanie Starling, Miriam Quick, 2018, See the Source\nGlobal Literacy Rates: Johan Norberg, 2016, See the Source\nTools: R, ggplot2, dplyr, plotly, ggiraph, ggrepel"
   },
   {
     "objectID": "code.html",
@@ -58,29 +58,36 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome to My STAT 515 Redesign Project",
+    "title": "Welcome!",
     "section": "",
-    "text": "This project is all about redesigning visualizations to enhance their effectiveness. Explore different sections of the website to learn more!\n\n\n\nCheck out the Redesign Project where I showcase the original and redesigned visualizations. Dive into the improvements made to the original graphs and see how effective visual communication can be!\n\n\n\n\nAll code used in this project is shared on the Code and References page. You can follow along, adapt it to your own projects, or simply get inspired!\n\n\n\n\nWant to know more about me? Visit the About page to learn more about my journey, background, and interests."
+    "text": "RedesignHub focuses on improving visualizations to enhance their effectiveness. Explore different sections of the website and learn about the redesign process!\n\n\n\nCheck out the project overview video to understand the motivation behind the redesigns. Click the link to view the video on YouTube.\n\n\n\nProject Overview\n\n\n\n\n\n\nHead over to the Redesign Project to see the original visualizations alongside their redesigned counterparts. Discover how effective visual communication can improve data interpretation!\n\n\n\n\nAll the code used in this project is available on the Code and References page. Feel free to explore and adapt it for your own projects!\n\n\n\n\nWant to know more about me? Visit the About page to learn about my journey, background, and interests."
+  },
+  {
+    "objectID": "index.html#watch-the-project-overview",
+    "href": "index.html#watch-the-project-overview",
+    "title": "Welcome!",
+    "section": "",
+    "text": "Check out the project overview video to understand the motivation behind the redesigns. Click the link to view the video on YouTube.\n\n\n\nProject Overview"
   },
   {
     "objectID": "index.html#explore-my-redesign",
     "href": "index.html#explore-my-redesign",
-    "title": "Welcome to My STAT 515 Redesign Project",
+    "title": "Welcome!",
     "section": "",
-    "text": "Check out the Redesign Project where I showcase the original and redesigned visualizations. Dive into the improvements made to the original graphs and see how effective visual communication can be!"
+    "text": "Head over to the Redesign Project to see the original visualizations alongside their redesigned counterparts. Discover how effective visual communication can improve data interpretation!"
   },
   {
     "objectID": "index.html#view-the-code",
     "href": "index.html#view-the-code",
-    "title": "Welcome to My STAT 515 Redesign Project",
+    "title": "Welcome!",
     "section": "",
-    "text": "All code used in this project is shared on the Code and References page. You can follow along, adapt it to your own projects, or simply get inspired!"
+    "text": "All the code used in this project is available on the Code and References page. Feel free to explore and adapt it for your own projects!"
   },
   {
     "objectID": "index.html#about-me",
     "href": "index.html#about-me",
-    "title": "Welcome to My STAT 515 Redesign Project",
+    "title": "Welcome!",
     "section": "",
-    "text": "Want to know more about me? Visit the About page to learn more about my journey, background, and interests."
+    "text": "Want to know more about me? Visit the About page to learn about my journey, background, and interests."
   }
 ]
